@@ -17,6 +17,15 @@ export class GetPeopleComponent implements OnInit {
     }, error => console.error(error));
   }
 
+  doRefresh(event) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
+
   public delete(person: Person) {
     if (confirm('Are you sure you want to delete ' + person.name + '?')) {
       let index = this.people.indexOf(person, 0);
