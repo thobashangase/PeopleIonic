@@ -17,7 +17,7 @@ export class GetPeopleComponent implements OnInit {
     }, error => console.error(error));
   }
 
-  public deletePerson(person: Person) {
+  public delete(person: Person) {
     if (confirm('Are you sure you want to delete ' + person.name + '?')) {
       let index = this.people.indexOf(person, 0);
 

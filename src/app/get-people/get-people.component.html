@@ -14,18 +14,18 @@
       <ion-item-sliding *ngFor="let person of people">
         <ion-item>
           <div class="item-note" slot="end">
-            {{person.Name}}
+            {{person.name}}
           </div>
         </ion-item>
 
         <ion-item-options>
-            <ion-item-option (click)="details(person.Id)" color="primary">
+            <ion-item-option (click)="details(person.id)" color="primary">
               <ion-icon slot="start" name="person"></ion-icon>
             </ion-item-option>
-            <ion-item-option (click)="update(person.Id)" color="secondary">
+            <ion-item-option (click)="update(person.id)" color="secondary">
               <ion-icon slot="start" name="create"></ion-icon>
               </ion-item-option>
-            <ion-item-option  (click)="delete(person.Id)" color="danger">
+            <ion-item-option  (click)="delete(person)" color="danger">
               <ion-icon slot="start" name="trash"></ion-icon>
             </ion-item-option>
           </ion-item-options>
