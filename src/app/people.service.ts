@@ -26,7 +26,7 @@ export class PeopleService {
     }  
   
     updatePerson(person) {  
-      return this._http.put(this.myAppUrl + 'api/People', person);
+      return this._http.put(this.myAppUrl + 'api/People/' + person.id, person);
     }  
   
     deletePerson(id: string) {  

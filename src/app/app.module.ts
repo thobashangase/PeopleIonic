@@ -13,6 +13,9 @@ import { PeopleService } from './people.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { GetPeopleModule } from './get-people/get-people.module';
+import { PersonDetailsModule } from './person-details/person-details.module';
+import { AddPersonModule } from './add-person/add-person.module';
+import { UpdatePersonModule } from './update-person/update-person.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +23,7 @@ import { GetPeopleModule } from './get-people/get-people.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule, GetPeopleModule,
+    FormsModule, GetPeopleModule, PersonDetailsModule, AddPersonModule, UpdatePersonModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
